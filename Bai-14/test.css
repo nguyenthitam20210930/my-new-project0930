@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+}
+
+ul li {
+    list-style-type: none;
+    display: inline;
+    background-color: wheat;
+}
+header {
+    height: 80px;
+    background-color: orangered;
+    position: relative;
+}
+nav {
+    position: absolute;
+    margin: 15px;
+}
+main {
+    height: 500px;
+}
+.content {
+    background-color: plum;
+}
+.left {
+    background-color: rgb(43, 131, 126);
+}
+.right {
+    background-color: coral;
+}
+
+.left, .content, .right {
+    float: left;
+    height: 500px;
+}
+footer {
+    background-color: rgb(14, 78, 14);
+    height: 100px;
+    clear: both;
+}
+
+@media screen and (min-width:768px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+@media screen and (max-width:500px){
+    .xscol-1 {width: 8.33%;}
+    .xscol-2 {width: 16.66%;}
+    .xscol-4 {width: 33.33%;}
+    .xscol-5 {width: 41.66%;}
+    .xscol-6 {width: 50%;}
+    .xscol-7 {width: 58.33%;}
+    .xscol-8 {width: 66.66%;}
+    .xscol-9 {width: 75%;}
+    .xscol-10 {width: 83.33%;}
+    .xscol-11 {width: 91.66%;}
+    .xscol-12 {width: 100%;
+    }
+
+@media screen and (min-width:500px) {
+    .mdcol-12 {width: 100%;
+    }

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto auto;
+            gap: 10px;
+            background-color: darksalmon;
+            padding: 20px;
+            /* can cho thanh phan o giua content, theo cot */
+            /* justify-content: center; */
+            /* align-content: center; */ can giua theo hang
+        }
+        .item {
+            background-color: darkseagreen;
+            padding: 30px;
+            text-align: center;
+        }
+        .i1 {
+            /* grid-column-start: 1;
+            grid-column-end: 4; */
+
+            grid-column: 1 / span 3;
+            /* grid-column: 1 / 4; */
+            /* grid-row: 2 / 4; */  ???
+        }
+        /* .i2 {
+            grid-row: 2 / 4; */
+        }
+        .i3 {
+            grid-column: 2 / 4;
+        }
+        .i4 {
+            grid-column: 1 / 4;
+        }
+        .i5 {
+            grid-area: 4/2/6/4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item i1">1</div>
+        <div class="item i2">Side bar</div>
+        <div class="item i3">Content</div>
+        <div class="item i4">4</div>
+        <div class="item i5">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+    </div>
+</body>
+</html>
