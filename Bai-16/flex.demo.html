@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+    box-sizing: border-box;
+        .i1 {
+            grid-area: im1;
+        }
+        .i2 {
+            grid-area: im2;
+        }
+        .i3 {
+            grid-area: im4;
+        }
+        .i4 {
+            grid-area: im5;
+        }
+        .container {
+            grid-template-areas:
+            'im1 im1 im1 im1';
+            gap: 10px;
+
+        }
+        .container div {
+            background: firebrick;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap-reverse;
+            background-color: cyan;
+        }
+        .container div {
+            background-color: darkorange;
+            margin: 20px;
+            height: 10%;
+            width: 20%;
+            
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="i1">1</div>
+        <div class="i2">2</div>
+        <div class="i3">3</div>
+        <div class="i4">4</div>
+        <div class="i5">5</div>
+        <div class="i6">6</div>
+       
+    </div>
+    
+</body>
+</html>
