@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        img {
+            width: 100%;
+        } 
+
+        .i1 {
+            flex: 25%;
+            padding: 10px;
+        }
+
+        .i2 {
+            flex: 25%;
+            padding: 10px;
+        }
+
+        .i3 {
+            flex: 25%;
+            padding: 10px;
+        }
+
+        .i4 {
+            flex: 25%;
+            padding: 10px;
+        }
+
+        @media screen and (max-width:500px) {
+            .container {
+                flex-direction: column;
+            }
+        } 
+
+        @media screen and (max-width:768px) {
+            .i1, .i2, .i3, .i4 {
+                flex: 50%;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="i1"><img src="../Bai-13/photo/IMG_5740.png" alt=""></div>
+        <div class="i2"><img src="../Bai-13/photo/IMG_5740.png" alt=""></div>
+        <div class="i3"><img src="../Bai-13/photo/IMG_5740.png" alt=""></div>
+        <div class="i4"><img src="../Bai-13/photo/IMG_5740.png" alt=""></div>
+    </div>
+</body>
+</html>
