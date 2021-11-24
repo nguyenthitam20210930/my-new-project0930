@@ -64,7 +64,7 @@ header a {
 }
 
 header .row .col-md-7 {
-    padding: 22vmin 1 vmin;
+    padding: 22vmin 1vmin;
     padding-bottom: 35vmin;
 }
 header .row .col-md-5 {
@@ -94,6 +94,14 @@ header .container .col-md-7 p {
     border-radius: px;
     font-weight: bold;
 }
+/* .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.815);
+    z-index: 9999;
+    transition: all 1.5s ease;
+} */
 /* Section 1 */
 .section-1 {
     padding: 20vmin vmin;
